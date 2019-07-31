@@ -9,8 +9,8 @@ const styles = {
   },
 };
 
-const StyledLink = withStyles(styles)(Link) as typeof Link; // Builds
-// const StyledLink = withStyles(styles)(Link);             // Fails
+const StyledLink = withStyles(styles)(Link);                   // Fails
+// const StyledLink = withStyles(styles)(Link) as typeof Link; // Builds
 
 export const App: FunctionComponent = () => (
   <ul>
